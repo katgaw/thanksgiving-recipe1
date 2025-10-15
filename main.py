@@ -2,7 +2,7 @@ from fastapi import FastAPI, Request, Form
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
-import openai
+from openai import OpenAI
 import os
 from typing import Optional
 
@@ -25,8 +25,8 @@ async def generate_recipe(
     api_key: str = Form(...)
 ):
     try:
-        # Set the OpenAI API key
-        openai.api_key = api_key
+        # Initialize OpenAI client with API key
+        client = OpenAI(api_key=api_key)
         
         # Create the prompt based on diet type
         diet_prompts = {
@@ -51,7 +51,7 @@ async def generate_recipe(
         """
         
         # Call OpenAI API
-        response = openai.chat.completions.create(
+        response = client.chat.completions.create(
             model="gpt-4",
             messages=[
                 {"role": "system", "content": "You are a helpful cooking assistant that creates simple, delicious Thanksgiving recipes."},

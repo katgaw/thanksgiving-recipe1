@@ -17,7 +17,7 @@ A beautiful FastAPI application that generates personalized Thanksgiving recipes
 - Python 3.13
 - OpenAI API key
 
-### Installation
+### Local Development
 
 1. **Clone the repository** (if not already done):
    ```bash
@@ -39,6 +39,27 @@ A beautiful FastAPI application that generates personalized Thanksgiving recipes
    ```
    http://localhost:8000
    ```
+
+### 🚀 Deploy to Vercel
+
+1. **Install Vercel CLI**:
+   ```bash
+   npm i -g vercel
+   ```
+
+2. **Deploy to Vercel**:
+   ```bash
+   vercel
+   ```
+
+3. **Follow the prompts** to configure your deployment
+
+4. **Your app will be live** at your Vercel URL!
+
+**Note**: The app is already configured for Vercel deployment with:
+- `vercel.json` configuration file
+- Compatible dependencies for Vercel's Python runtime
+- Fixed OpenAI SDK compatibility issues
 
 ## 🎯 How to Use
 
