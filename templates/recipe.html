@@ -105,6 +105,10 @@
             background-color: #fff3cd;
             color: #856404;
         }
+        .diet-lactose_intolerant {
+            background-color: #fce8f3;
+            color: #7b1e5a;
+        }
     </style>
 </head>
 <body>
@@ -120,6 +124,8 @@
                                 <i class="fas fa-leaf me-1"></i>Vegetarian Recipe
                             {% elif diet_type == 'vegan' %}
                                 <i class="fas fa-seedling me-1"></i>Vegan Recipe
+                            {% elif diet_type == 'lactose_intolerant' %}
+                                <i class="fas fa-cow me-1"></i>Lactose-Free Recipe
                             {% else %}
                                 <i class="fas fa-drumstick-bite me-1"></i>Traditional Recipe
                             {% endif %}

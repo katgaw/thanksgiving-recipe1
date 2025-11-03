@@ -32,6 +32,7 @@ async def generate_recipe(
         diet_prompts = {
             "vegetarian": "vegetarian (no meat, but can include dairy and eggs)",
             "vegan": "vegan (no animal products including dairy, eggs, or honey)",
+            "lactose_intolerant": "lactose-free (no dairy or lactose-containing ingredients)",
             "no_restrictions": "traditional (no dietary restrictions)"
         }
         
