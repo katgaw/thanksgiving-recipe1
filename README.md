@@ -1,4 +1,4 @@
-# 🦃 Thanksgiving Recipe Generator
+# 🦃 Thanksgiving Recipe Generator v01
 
 A beautiful FastAPI application that generates personalized Thanksgiving recipes based on your dietary preferences using GPT-4.
 
